@@ -6,4 +6,10 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "fastapi[standard]>=0.115.12",
+    "streamlit",
+    "requests"
 ]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["frontend*", "resources*"]
